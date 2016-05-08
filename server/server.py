@@ -25,7 +25,7 @@ value=args[cmd].value
 if key=="s": #Set ip
 
 	f=open('ip.txt','w')
-    f.write(value)
+    	f.write(value)
 	f.close()
 
 	print "<html>" + str(value)  + " written.  </html>"
