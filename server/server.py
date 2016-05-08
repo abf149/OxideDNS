@@ -32,7 +32,7 @@ if key=="s": #Set ip
 elif cmd=="g": #Get ip
 
 	f=open('ip.txt','r')
-	c=f.read()
+	ip=f.read()
 	f.close()
     
-	print "<html>" + c + "</html>"
+	print ip 
