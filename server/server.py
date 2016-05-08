@@ -29,7 +29,7 @@ if key=="s": #Set ip
 	f.close()
 
 	print "<html>" + str(value)  + " written.  </html>"
-elif cmd=="g": #Get ip
+elif key=="g": #Get ip
 
 	f=open('ip.txt','r')
 	ip=f.read()
