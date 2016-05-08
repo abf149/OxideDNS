@@ -20,7 +20,7 @@ print "Content-type: text/html\n"
 #Fetch URL key/value
 args=cgi.FieldStorage()
 key=args.keys()[0]
-value=args[cmd].value
+value=args[key].value
 
 if key=="s": #Set ip
 
@@ -35,4 +35,4 @@ elif cmd=="g": #Get ip
 	ip=f.read()
 	f.close()
     
-	print ip 
+	print str(ip)
