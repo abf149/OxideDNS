@@ -9,7 +9,7 @@ if [ $? -eq 0 ]; then
     sleep 1m    
 else
     echo FAIL
-    sleep 10s    
+    sleep 5s    
 fi
 
 
