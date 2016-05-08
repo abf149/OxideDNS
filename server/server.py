@@ -19,8 +19,12 @@ print "Content-type: text/html\n"
 
 #Fetch URL key/value
 args=cgi.FieldStorage()
-key=args.keys()[0]
-value=args[key].value
+
+key=""
+value=""
+if len(args.keys()>0):
+    key=args.keys()[0]
+    value=args[key].value
 
 if key=="s": #Set ip
 
@@ -29,7 +33,7 @@ if key=="s": #Set ip
 	f.close()
 
 	print "<html>" + str(value)  + " written.  </html>"
-elif key=="g": #Get ip
+else: #Get ip
 
 	f=open('ip.txt','r')
 	ip=f.read()
