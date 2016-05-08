@@ -22,7 +22,7 @@ args=cgi.FieldStorage()
 
 key=""
 value=""
-if len(args.keys()>0):
+if len(args.keys())>0:
     key=args.keys()[0]
     value=args[key].value
 
